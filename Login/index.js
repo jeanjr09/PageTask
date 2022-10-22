@@ -12,15 +12,15 @@ export default function Login() {
 
             <View style={styles.containerLogo}>
                 <Image 
-                 source={require('../img/logo.svg')}
-                 style={{ width: '100%', height: '60%' }}
+                 source={require('../assets/logo.svg')}
+                 style={{ width: '100%', height: '50%' }}
                  resizeMode="" />
             <View>
                 <Text style={styles.containerForm}></Text>
                     <Text style={styles.title}>Selecione o seu perfil abaixo para acessar sua conta:</Text>
 
-                    <Button title="Responsável" />
-                    <Button title="Profissional" type="outline" />
+                    <Button title="Responsável" style={{ width: '70%', alignSelf: 'center', paddingTop: 30}}/>
+                    <Button title="Profissional" style={{ width: '70%', alignSelf: 'center', paddingTop: 30}} type="outline" />
             </View>
 
             </View>
@@ -51,6 +51,7 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         borderRadius: 50,
         width: '60%',
+        
         
     }
 })
